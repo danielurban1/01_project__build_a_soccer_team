@@ -72,27 +72,59 @@ def create_teams(advanced, beginner, teams):
 def create_team_lists(sharks, raptors, dragons):
     teams = open("teams.txt", "w")
     teams.write("Sharks" + "\n")
-    for player in sharks:
-        for row in player:
-            teams.write(", ".join(str(letter) for letter in row) + "\n")
+    for shark in sharks:
+        for row in shark:
+            teams.write("{}, {}, {}\n".format(row[0], row[2], row[3]))
     teams.write("\n" + "Raptors" + "\n")
-    for player in raptors:
-        for row in player:
-            teams.write(", ".join(str(letter) for letter in row) + "\n")
+    for raptor in raptors:
+        for row in raptor:
+            teams.write("{}, {}, {}\n".format(row[0], row[2], row[3]))
     teams.write("\n" + "Dragons" + "\n")
-    for player in dragons:
-        for row in player:
-            teams.write(", ".join(str(letter) for letter in row) + "\n")
+    for dragon in dragons:
+        for row in dragon:
+            teams.write("{}, {}, {}\n".format(row[0], row[2], row[3]))
 
     teams.close()
 
 
+def create_letters(sharks, raptors, dragons):
+    for shark in sharks:
+        for row in shark:
+            name = str(row[0])
+            list = open('%s.txt' % name, 'w')
+            list.write(
+'''Dear {},
+I am pleased to inform you that you son {} is a members of Sharks Football Team. First training starts at 16 PM at school pitch.
+Yours faithfully,
+John Smiths
+School Principal'''.format(row[3], row[0]))
+            list.close()
+    for raptor in raptors:
+        for row in raptor:
+            name = str(row[0])
+            list = open('%s.txt' % name, 'w')
+            list.write(
+'''Dear {},
+I am pleased to inform you that you son {} is a members of Raptors Football Team. First training starts at 17 PM at school pitch.
+Yours faithfully,
+John Smiths
+School Principal'''.format(row[3], row[0]))
+            list.close()
+    for dragon in dragons:
+        for row in dragon:
+            name = str(row[0])
+            list = open('%s.txt' % name, 'w')
+            list.write(
+'''Dear {},
+I am pleased to inform you that you son {} is a members of Dragons Football Team. First training starts at 18 PM at school pitch.
+Yours faithfully,
+John Smiths
+School Principal'''.format(row[3], row[0]))
+            list.close()
 
-
-
-# def create_letters():
-list_of_players = get_players()
-advanced_players, beginner_players = split_players(list_of_players)
-
-team_sharks, team_raptors, team_dragons = create_teams(advanced_players, beginner_players, TEAMS)
-create_team_lists(sharks, raptors, dragons)
+if __name__ == "__main__":
+    list_of_players = get_players()
+    advanced_players, beginner_players = split_players(list_of_players)
+    team_sharks, team_raptors, team_dragons = create_teams(advanced_players, beginner_players, TEAMS)
+    create_team_lists(sharks, raptors, dragons)
+    create_letters(sharks, raptors, dragons)

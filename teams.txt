@@ -1,23 +1,23 @@
 Sharks
-Joe Smith, 42, YES, Jim and Jan Smith
-Eva Gordon, 45, NO, Wendy and Mike Gordon
-Jill Tanner, 36, YES, Clara Tanner
-Matt Gill, 40, NO, Charles and Sylvia Gill
-Bill Bon, 43, YES, Sara and Jenny Bon
-Kimmy Stein, 41, NO, Bill and Hillary Stein
+Joe Smith, YES, Jim and Jan Smith
+Eva Gordon, NO, Wendy and Mike Gordon
+Jill Tanner, YES, Clara Tanner
+Matt Gill, NO, Charles and Sylvia Gill
+Bill Bon, YES, Sara and Jenny Bon
+Kimmy Stein, NO, Bill and Hillary Stein
 
 Raptors
-Karl Saygan, 42, YES, Heather Bledsoe
-Sammy Adams, 45, NO, Jeff Adams
-Suzane Greenberg, 44, YES, Henrietta Dumas
-Sal Dali, 41, NO, Gala Dali
-Diego Soto, 41, YES, Robin and Sarika Soto
-Joe Kavalier, 39, NO, Sam and Elaine Kavalier
+Karl Saygan, YES, Heather Bledsoe
+Sammy Adams, NO, Jeff Adams
+Suzane Greenberg, YES, Henrietta Dumas
+Sal Dali, NO, Gala Dali
+Diego Soto, YES, Robin and Sarika Soto
+Joe Kavalier, NO, Sam and Elaine Kavalier
 
 Dragons
-Phillip Helm, 44, YES, Thomas Helm and Eva Jones
-Ben Finkelstein, 44, NO, Aaron and Jill Finkelstein
-Les Clay, 42, YES, Wynonna Brown
-Chloe Alaska, 47, NO, David and Jamie Alaska
-Herschel Krustofski, 45, YES, Hyman and Rachel Krustofski
-Arnold Willis, 43, NO, Claire Willis
+Phillip Helm, YES, Thomas Helm and Eva Jones
+Ben Finkelstein, NO, Aaron and Jill Finkelstein
+Les Clay, YES, Wynonna Brown
+Chloe Alaska, NO, David and Jamie Alaska
+Herschel Krustofski, YES, Hyman and Rachel Krustofski
+Arnold Willis, NO, Claire Willis

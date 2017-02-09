@@ -1,4 +1,7 @@
 """
+Author: Daniel Urban
+Date: 2017-02-09
+      yyyy-mm-dd
 You have volunteered to be the Coordinator for your town’s youth soccer league.As part of your job you need to divide
 the 18 children who have signed up for the league into three even teams - Dragons, Sharks and Raptors.
 In years past, the teams have been unevenly matched, so this year you are doing your best to fix that.
@@ -42,7 +45,7 @@ def split_players(players):
     This function splits players into two groups: advanced players and beginner players.
     :param players: List with information about players.
     :return advanced: List with information about advanced players.
-            beginners: List with information about beginner players.
+    :return beginners: List with information about beginner players.
     """
     advanced = []
     beginners = []
@@ -55,7 +58,14 @@ def split_players(players):
 
 
 def create_teams(advanced, beginner, teams):
-    team_index = 0
+    """
+    This function splits all players into 3 teams. Skill level of each team is similar.
+    :param advanced: List with information about advanced players.
+    :param beginner: List with information about beginner players.
+    :param teams: List that contains teams.
+    :return: This function returns lists of players in each team
+    """
+    team_index = 0  # This variable helps  to append players into correct team.
 
     for team in teams:
         team_size = 0
@@ -70,6 +80,13 @@ def create_teams(advanced, beginner, teams):
 
 
 def create_team_lists(sharks, raptors, dragons):
+    """
+    This function creates text file with players divided into teams.
+    :param sharks: List of players in team.
+    :param raptors: List of players in team.
+    :param dragons: List of players in team.
+    :return:
+    """
     teams = open("teams.txt", "w")
     teams.write("Sharks" + "\n")
     for shark in sharks:
@@ -88,6 +105,13 @@ def create_team_lists(sharks, raptors, dragons):
 
 
 def create_letters(sharks, raptors, dragons):
+    """
+    This function creates 18 text files - letters for parents of each players
+    :param sharks: List of players in team.
+    :param raptors: List of players in team.
+    :param dragons: List of players in team.
+    :return:
+    """
     for shark in sharks:
         for row in shark:
             name = str(row[0])
